@@ -43,6 +43,7 @@ http://localhost:8080/libros
     "autor": "Carlos Ruiz Zafón",
     "isbn": "978-3-16-148410-0"
 }
+![image](https://github.com/user-attachments/assets/93f82023-e71e-4950-8bf4-00d030bfb955)
 
 # Obtener por Id (GET)
 http://localhost:8080/libros/1
