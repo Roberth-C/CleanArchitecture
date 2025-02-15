@@ -31,7 +31,7 @@ http://localhost:8080/autores
     "apellido": "Pérez"
 }
 # autores
-<img src="https://github.com/user-attachments/assets/e595df87-eded-4947-9d20-8ad3a037fc25" alt="autores" width="350"/>
+<img src="https://github.com/user-attachments/assets/e595df87-eded-4947-9d20-8ad3a037fc25" alt="autores" width="450"/>
 
 
 # Obtener por Id (GET)
@@ -55,7 +55,7 @@ http://localhost:8080/libros
 }
 
 # libros
-<img src="https://github.com/user-attachments/assets/93f82023-e71e-4950-8bf4-00d030bfb955" alt="libros" width="350"/>
+<img src="https://github.com/user-attachments/assets/93f82023-e71e-4950-8bf4-00d030bfb955" alt="libros" width="450"/>
 
 # Obtener por Id (GET)
 http://localhost:8080/libros/1
