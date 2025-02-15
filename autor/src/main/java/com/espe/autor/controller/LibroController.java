@@ -20,21 +20,18 @@ public class LibroController {
         this.listarLibros = listarLibros;
     }
 
-    // Crear un libro
     @PostMapping
     public ResponseEntity<Libro> crearLibro(@RequestBody Libro libro) {
         Libro libroCreado = crearLibro.ejecutar(libro.getTitulo(), libro.getAutor(), libro.getIsbn());
         return ResponseEntity.status(201).body(libroCreado);
     }
 
-    // Obtener todos los libros
     @GetMapping
     public ResponseEntity<List<Libro>> listarLibros() {
         List<Libro> libros = listarLibros.ejecutar();
         return ResponseEntity.ok(libros);
     }
 
-    // Obtener un libro por ID
     @GetMapping("/{id}")
     public ResponseEntity<Libro> obtenerLibro(@PathVariable Long id) {
         Libro libro = listarLibros.ejecutar().stream()
@@ -47,7 +44,6 @@ public class LibroController {
         return ResponseEntity.ok(libro);
     }
 
-    // Eliminar un libro
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminarLibro(@PathVariable Long id) {
         Libro libro = listarLibros.ejecutar().stream()
@@ -57,7 +53,7 @@ public class LibroController {
         if (libro == null) {
             return ResponseEntity.notFound().build();
         }
-        crearLibro.eliminar(libro);
+        crearLibro.eliminar(libro); // Aquí es donde debe llamarse el método eliminar
         return ResponseEntity.noContent().build();
     }
 }

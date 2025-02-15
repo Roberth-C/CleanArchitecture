@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CrearLibro {
-
     private final LibroRepository libroRepository;
 
     public CrearLibro(LibroRepository libroRepository) {
@@ -20,6 +19,6 @@ public class CrearLibro {
 
     // Método para eliminar un libro
     public void eliminar(Libro libro) {
-        libroRepository.deleteById(libro.getId());  // Elimina el libro por su ID
+        libroRepository.delete(libro);
     }
 }

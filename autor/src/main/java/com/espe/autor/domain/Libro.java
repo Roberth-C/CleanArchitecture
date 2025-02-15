@@ -1,19 +1,28 @@
 package com.espe.autor.domain;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Libro {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String titulo;
     private String autor;
     private String isbn;
 
-    // Constructor
+    public Libro() {}
+
     public Libro(String titulo, String autor, String isbn) {
         this.titulo = titulo;
         this.autor = autor;
         this.isbn = isbn;
     }
 
-    // Getters y Setters
     public Long getId() {
         return id;
     }

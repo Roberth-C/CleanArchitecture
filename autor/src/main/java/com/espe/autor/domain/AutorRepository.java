@@ -1,10 +1,5 @@
 package com.espe.autor.domain;
 
-import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AutorRepository {
-    Autor save(Autor autor);
-    List<Autor> findAll();
-    Autor findById(Long id);
-    void deleteById(Long id);
-}
+public interface AutorRepository extends JpaRepository<Autor, Long> {}

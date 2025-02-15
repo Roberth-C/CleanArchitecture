@@ -1,10 +1,5 @@
 package com.espe.autor.domain;
 
-import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface LibroRepository {
-    Libro save(Libro libro);
-    List<Libro> findAll();
-    Libro findById(Long id);
-    void deleteById(Long id);
-}
+public interface LibroRepository extends JpaRepository<Libro, Long> {}

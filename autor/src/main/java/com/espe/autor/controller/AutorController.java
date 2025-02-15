@@ -20,21 +20,18 @@ public class AutorController {
         this.listarAutores = listarAutores;
     }
 
-    // Crear un autor
     @PostMapping
     public ResponseEntity<Autor> crearAutor(@RequestBody Autor autor) {
         Autor autorCreado = crearAutor.ejecutar(autor.getNombre(), autor.getApellido());
         return ResponseEntity.status(201).body(autorCreado);
     }
 
-    // Obtener todos los autores
     @GetMapping
     public ResponseEntity<List<Autor>> listarAutores() {
         List<Autor> autores = listarAutores.ejecutar();
         return ResponseEntity.ok(autores);
     }
 
-    // Obtener un autor por ID
     @GetMapping("/{id}")
     public ResponseEntity<Autor> obtenerAutor(@PathVariable Long id) {
         Autor autor = listarAutores.ejecutar().stream()
@@ -47,7 +44,6 @@ public class AutorController {
         return ResponseEntity.ok(autor);
     }
 
-    // Eliminar un autor
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminarAutor(@PathVariable Long id) {
         Autor autor = listarAutores.ejecutar().stream()
@@ -57,7 +53,7 @@ public class AutorController {
         if (autor == null) {
             return ResponseEntity.notFound().build();
         }
-        crearAutor.eliminar(autor);
+        crearAutor.eliminar(autor); 
         return ResponseEntity.noContent().build();
     }
 }
