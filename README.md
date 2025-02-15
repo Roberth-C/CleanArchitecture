@@ -31,8 +31,9 @@ http://localhost:8080/autores
     "apellido": "Pérez"
 }
 
-![Captura de pantalla 2025-02-14 233502](https://github.com/user-attachments/assets/e595df87-eded-4947-9d20-8ad3a037fc25)
+![Captura de pantalla 2025-02-14 233502]()
 
+<img src="https://github.com/user-attachments/assets/e595df87-eded-4947-9d20-8ad3a037fc25" alt="autores" width="350"/>
 # Obtener por Id (GET)
 http://localhost:8080/autores/1
 
