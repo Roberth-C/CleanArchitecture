@@ -1,11 +1,20 @@
 # CleanArchitecture
+# Instalar
+mvn clean install
+
+# Ejecución
+
+mvn spring-boot:run
 
 
-Pruebas desde Postman Autores
-Listar los autores (GET)
+
+
+
+# Pruebas desde Postman Autores
+# Listar los autores (GET)
 http://localhost:8080/autores 
 
-Crear autor  (POST)
+# Crear autor  (POST)
 http://localhost:8080/autores
 
 {
@@ -13,18 +22,18 @@ http://localhost:8080/autores
     "apellido": "Pérez"
 }
 
-Obtener por Id (GET)
+# Obtener por Id (GET)
 http://localhost:8080/autores/1
 
-Eliminar por Id (DELETE)
+# Eliminar por Id (DELETE)
 http://localhost:8080/autores/1
 
 ------------------------------------------------------------------------------
-Pruebas desde Postman Libros
-Listar los autores (GET)
+# Pruebas desde Postman Libros
+# Listar los autores (GET)
 http://localhost:8080/libros 
 
-Crear libro  (POST)
+# Crear libro  (POST)
 http://localhost:8080/libros
 
 {
@@ -33,10 +42,10 @@ http://localhost:8080/libros
     "isbn": "978-3-16-148410-0"
 }
 
-Obtener por Id (GET)
+# Obtener por Id (GET)
 http://localhost:8080/libros/1
 
-Eliminar por Id (DELETE)
+# Eliminar por Id (DELETE)
 http://localhost:8080/libros/1
 
 
