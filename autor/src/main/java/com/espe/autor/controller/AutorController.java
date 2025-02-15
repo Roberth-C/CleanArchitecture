@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/autores")
 public class AutorController {
-
     private final CrearAutor crearAutor;
 
     public AutorController(CrearAutor crearAutor) {

@@ -1,25 +1,17 @@
 package com.espe.autor.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
-@Entity
 public class Libro {
-
-    @Id
     private Long id;
     private String titulo;
     private String autor;
 
-    // Constructor, Getters y Setters
-    public Libro() {}
-
+    // Constructor
     public Libro(String titulo, String autor) {
         this.titulo = titulo;
         this.autor = autor;
     }
 
-    // Getters y setters
+    // Getters y Setters
     public Long getId() {
         return id;
     }

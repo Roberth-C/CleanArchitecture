@@ -1,7 +1,10 @@
 package com.espe.autor.domain;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
 
-public interface LibroRepository extends JpaRepository<Libro, Long> {
-    // Los métodos CRUD son manejados automáticamente por Spring Data JPA
+public interface LibroRepository {
+    Libro save(Libro libro);
+    List<Libro> findAll();
+    Libro findById(Long id);
+    void deleteById(Long id);
 }

@@ -1,7 +1,10 @@
 package com.espe.autor.domain;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
 
-public interface AutorRepository extends JpaRepository<Autor, Long> {
-    // Métodos CRUD proporcionados automáticamente por Spring Data JPA
+public interface AutorRepository {
+    Autor save(Autor autor);
+    List<Autor> findAll();
+    Autor findById(Long id);
+    void deleteById(Long id);
 }

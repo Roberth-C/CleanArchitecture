@@ -10,7 +10,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/libros")
 public class LibroController {
-
     private final ListarLibros listarLibros;
 
     public LibroController(ListarLibros listarLibros) {

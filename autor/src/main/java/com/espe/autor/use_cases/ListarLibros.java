@@ -8,7 +8,6 @@ import java.util.List;
 
 @Service
 public class ListarLibros {
-
     private final LibroRepository libroRepository;
 
     public ListarLibros(LibroRepository libroRepository) {
