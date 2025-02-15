@@ -4,11 +4,13 @@ public class Libro {
     private Long id;
     private String titulo;
     private String autor;
+    private String isbn;
 
     // Constructor
-    public Libro(String titulo, String autor) {
+    public Libro(String titulo, String autor, String isbn) {
         this.titulo = titulo;
         this.autor = autor;
+        this.isbn = isbn;
     }
 
     // Getters y Setters
@@ -34,5 +36,13 @@ public class Libro {
 
     public void setAutor(String autor) {
         this.autor = autor;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 }

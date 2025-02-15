@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CrearAutor {
+
     private final AutorRepository autorRepository;
 
     public CrearAutor(AutorRepository autorRepository) {
@@ -15,5 +16,10 @@ public class CrearAutor {
     public Autor ejecutar(String nombre, String apellido) {
         Autor autor = new Autor(nombre, apellido);
         return autorRepository.save(autor);
+    }
+
+    // Método para eliminar un autor
+    public void eliminar(Autor autor) {
+        autorRepository.deleteById(autor.getId());  // Elimina el autor por su ID
     }
 }
