@@ -54,11 +54,11 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- MySQL Connector for connecting to MySQL Database -->
+        <!-- PostgreSQL Connector for connecting to PostgreSQL Database -->
         <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
-            <scope>runtime</scope>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.6.0</version> <!-- Last compatible version -->
         </dependency>
 
         <!-- Spring Boot Starter Test for testing support (JUnit, MockMVC, etc.) -->
@@ -91,4 +91,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
