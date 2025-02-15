@@ -1,3 +1,11 @@
+# Crear Base de datos docker
+docker run --name CLeanArchitecture -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin1234 -e POSTGRES_DB=AutorLibro -p 5432:5432 -d postgres
+
+# DBeaver
+![image](https://github.com/user-attachments/assets/29b225c6-352e-4c09-8663-8cd1b7512134)
+
+
+
 # CleanArchitecture
 # Instalar
 mvn clean install
