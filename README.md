@@ -30,10 +30,10 @@ http://localhost:8080/autores
     "nombre": "Juanito",
     "apellido": "Pérez"
 }
-
-![Captura de pantalla 2025-02-14 233502]()
-
+# autores
 <img src="https://github.com/user-attachments/assets/e595df87-eded-4947-9d20-8ad3a037fc25" alt="autores" width="350"/>
+
+
 # Obtener por Id (GET)
 http://localhost:8080/autores/1
 
@@ -53,7 +53,9 @@ http://localhost:8080/libros
     "autor": "Carlos Ruiz Zafón",
     "isbn": "978-3-16-148410-0"
 }
-![image](https://github.com/user-attachments/assets/93f82023-e71e-4950-8bf4-00d030bfb955)
+
+# libros
+<img src="https://github.com/user-attachments/assets/93f82023-e71e-4950-8bf4-00d030bfb955" alt="libros" width="350"/>
 
 # Obtener por Id (GET)
 http://localhost:8080/libros/1
